@@ -9,8 +9,10 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 ```
+Import the Postman collection to use API to add mail and add partner
 
 ## Run Frontend
+Frontend only show information about partner whose id is 1 because I do not have enough time to create a UI that can modify partner's id.
 
 ```bash
 cd unity_fe
