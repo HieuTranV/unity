@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "c12ed384-e542-4279-84c9-e1dd4bb3d3a9",
+		"name": "Unity",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17273643"
+	},
+	"item": [
+		{
+			"name": "Add Parrtner",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Shopee\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/mail_management/add_partner/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mail_management",
+						"add_partner",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Mail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"hieutranvan25@gmail.com\",\r\n    \"is_subscribe\": false,\r\n    \"is_active\": true,\r\n    \"partner_mail\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/mail_management/add_mail/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mail_management",
+						"add_mail",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get List Mail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"hieutranvan25@gmail.com\",\r\n    \"is_subscribe\": false,\r\n    \"is_active\": true,\r\n    \"partner_mail\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/mail_management/get_list_mail/?partner_id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mail_management",
+						"get_list_mail",
+						""
+					],
+					"query": [
+						{
+							"key": "partner_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Total Mails",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"hieutranvan25@gmail.com\",\r\n    \"is_subscribe\": false,\r\n    \"is_active\": true,\r\n    \"partner_mail\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/mail_management/get_number_mail/?partner_id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mail_management",
+						"get_number_mail",
+						""
+					],
+					"query": [
+						{
+							"key": "partner_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get New Mails This Month",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"hieutranvan25@gmail.com\",\r\n    \"is_subscribe\": false,\r\n    \"is_active\": true,\r\n    \"partner_mail\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/mail_management/get_number_new_mail/?partner_id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mail_management",
+						"get_number_new_mail",
+						""
+					],
+					"query": [
+						{
+							"key": "partner_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

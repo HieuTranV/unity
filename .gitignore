@@ -1,0 +1,3 @@
+unity_be/**/__pycache__/
+unity_be/**/migrations/
+unity_be/db.sqlite3
